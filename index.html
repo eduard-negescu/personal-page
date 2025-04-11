@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eduard Negescu - Resume</title>
+    <link rel="icon" type="image/x-icon" href="/balloon.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <style>
         body {
             font-family: 'Ubuntu', sans-serif;
         }
     </style>
 </head>
+
 <body>
     <div class="container mt-5">
         <header class="text-center mb-4">
@@ -28,40 +32,78 @@
         <section class="mb-5">
             <h2>About Me</h2>
             <p>
-                I’m a final-year bachelor student with a strong interest in mathematics, computer science, and building real-world software solutions.
-                I enjoy solving algorithmic challenges and working on web development and AI projects. I’m always eager to learn new technologies and
+                I’m a final-year bachelor student with a strong interest in mathematics, computer science, and building
+                real-world software solutions.
+                I enjoy solving algorithmic challenges and working on web development and AI projects. I’m always eager
+                to learn new technologies and
                 collaborate in diverse environments.
             </p>
         </section>
 
         <section>
-            <h2>Projects</h2>
-            <ul>
-                <li class="mb-3">
-                    <strong>Toxicity Detection App</strong><br>
-                    An AI-powered web application that detects toxic discourse in Romanian using a BERT transformer model trained on the ro-offense dataset.
-                    Includes authentication with JWT and an admin dashboard.
-                    <br><em>Tech:</em> Python, FastAPI, Hugging Face, BERT, PostgreSQL, React, TypeScript
-                    <br><a href="https://github.com/eduard-negescu/ToxicityDetectionApi" target="_blank">View on GitHub</a>
-                </li>
-                <li class="mb-3">
-                    <strong>Finances WebFlux App</strong><br>
-                    Asynchronous CRUD API for financial records using Java Spring WebFlux and a React frontend.
-                    <br><em>Tech:</em> Java, SpringBoot, R2DBC, PostgreSQL, Docker, React, TypeScript
-                    <br><a href="https://github.com/eduard-negescu/FinancesSpringBoot" target="_blank">View on GitHub</a>
-                </li>
-                <li class="mb-3">
-                    <strong>AndroidPodcastApp</strong><br>
-                    A native Android app built with Kotlin and Jetpack Compose that fetches and plays podcasts from the Listen Notes API.
-                    <br><a href="https://github.com/eduard-negescu/AndroidPodcastApp" target="_blank">View on GitHub</a>
-                </li>
-                <li class="mb-3">
-                    <strong>Flask Podcast Website</strong><br>
-                    A server-rendered podcast listening platform built with Python and Flask.
-                    <br><a href="https://github.com/eduard-negescu/podcast_app" target="_blank">View on GitHub</a>
-                </li>
-            </ul>
+            <h2 class="mb-4">Projects</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <!-- Project 1 -->
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Toxicity Detection App</h5>
+                            <p class="card-text">
+                                An AI-powered web application that detects toxic discourse in Romanian using a BERT
+                                transformer model trained on the ro-offense dataset. Includes authentication with JWT
+                                and an admin dashboard.
+                            </p>
+                            <p><em>Tech:</em> Python, FastAPI, Hugging Face, BERT, PostgreSQL, React, TypeScript</p>
+                            <a href="https://github.com/eduard-negescu/ToxicityDetectionApi" target="_blank"
+                                class="btn btn-info">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Finances WebFlux App</h5>
+                            <p class="card-text">
+                                Asynchronous CRUD API for financial records using Java Spring WebFlux and a React
+                                frontend.
+                            </p>
+                            <p><em>Tech:</em> Java, SpringBoot, R2DBC, PostgreSQL, Docker, React, TypeScript</p>
+                            <a href="https://github.com/eduard-negescu/FinancesSpringBoot" target="_blank"
+                                class="btn btn-info">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">AndroidPodcastApp</h5>
+                            <p class="card-text">
+                                A native Android app built with Kotlin and Jetpack Compose that fetches and plays
+                                podcasts from the Listen Notes API.
+                            </p>
+                            <a href="https://github.com/eduard-negescu/AndroidPodcastApp" target="_blank"
+                                class="btn btn-info">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Flask Podcast Website</h5>
+                            <p class="card-text">
+                                A server-rendered podcast listening platform built with Python and Flask.
+                            </p>
+                            <a href="https://github.com/eduard-negescu/podcast_app" target="_blank"
+                                class="btn btn-info">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+        <div class="container mt-5 pb-5"></div>
     </div>
 </body>
 </html>
